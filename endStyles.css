@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("/img/o.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game {
+    position: absolute;
+    width: 1536px;
+    height: 70px;
+    margin-left: 0;
+    background-size: 100% 60px;
+    top: 659px;
+    left: 0;
+}
+
+#sasuke {
+    width: 450px;
+    height: 420px;
+    background-image: url(img/naruto-standL.gif);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    top: 160px;
+    left: 990px;
+}
+
+#container {
+    visibility: visible;
+}
+
+#scroll {
+    position: absolute;
+    width: 850px;
+    height: 500px;
+    right: 500px;
+    top: 120px;
+    cursor: text;
+}
+
+#score {
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    left: 530px;
+    top: 180px;
+    cursor: text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #543927;
+    font-size: 25px;
+}
+
+#scoreP {
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    left: 550px;
+    top: 230px;
+    cursor: text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #000000;
+    font-size: 25px;
+}
+
+#line {
+    position: absolute;
+    left: 260px;
+    top: 300px;
+}
+
+#x1,#x2 {
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    left: 530px;
+    top: 340px;
+    cursor: text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #000000;
+    font-size: 15px;
+}
+
+#spike {
+    position: absolute;
+    left: 580px;
+    top: 375px;
+    animation: rotate 1.4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+#eq1,#eq2 {
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    left: 620px;
+    top: 340px;
+    cursor: text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #000000;
+    font-size: 15px;
+}
+
+#scoreS,#scoreB {
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    left: 660px;
+    top: 325px;
+    cursor: text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+#x2,#eq2{
+    top : 425px;
+}
+#scoreB{
+    top : 415px;
+}
+#boss{
+    position: absolute;
+    left: 550px;
+    top : 425px;
+}
+
+#timer{
+    display: flex;
+    position: absolute;
+    width: 1050px;
+    height: 70px;
+    left: 710px;
+    top: 450px;
+    cursor:text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #950000
+  }
+  
+  #timer2{
+    display: flex;
+    position: absolute;
+    width: 1050px;
+    height: 70px;
+    left: 910px;
+    top: 450px;
+    cursor:text;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #950000
+  }
+
+#fadeOut {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
+}
+
+#fadeOut.fade-in {
+    visibility: visible;
+    opacity: 1;
+}

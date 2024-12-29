@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("/img/o.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.game {
+  position: absolute;
+  width: 1536px;
+  height: 70px;
+  margin-left: 0;
+  background-size: 100% 60px;
+  top: 659px;
+  left: 0;
+}
+
+#sasuke {
+  width: 250px;
+  height: 230px;
+  background-image: url(img/naruto-standL.gif);
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  top: 330px;
+  left: 600px;
+}
+
+#skeleton {
+  width: 220px;
+  height: 220px;
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 380px;
+  left: 1000px;
+}
+
+.jumpL {
+  animation: jumpL 0.9s linear;
+}
+
+@keyframes jumpL {
+  0% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px
+  }
+
+  10% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+  }
+
+  20% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+  }
+
+  30% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+  }
+
+  40% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+  }
+
+  50% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+    top: calc(var(--jump-offsett));
+  }
+
+  60% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb1));
+  }
+
+  70% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb2));
+  }
+
+  80% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb3));
+  }
+
+  90% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb4));
+  }
+
+  100% {
+    background-image: url(img/jumpL.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb5));
+  }
+}
+
+.jumpR {
+  animation: jumpR 0.9s linear;
+}
+
+@keyframes jumpR {
+  0% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+  }
+
+  10% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+  }
+
+  20% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+  }
+
+  30% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+  }
+
+  40% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+  }
+
+  50% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+    top: calc(var(--jump-offsett));
+  }
+
+  60% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb1));
+  }
+
+  70% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb2));
+  }
+
+  80% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb3));
+  }
+
+  90% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb4));
+  }
+
+  100% {
+    background-image: url(img/jumpR.gif);
+    background-size: 220px 200px;
+    bottom: calc(var(--jump-offsetb5));
+  }
+}
+
+/*animation: punch 0.6s linear;*/
+.punchR {
+  animation: punchR 0.9s linear;
+}
+
+@keyframes punchR {
+  0% {
+    width: 240px;
+    height: 200px;
+    background-image: url(img/punchR.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  100% {
+    width: 240px;
+    height: 200px;
+    background-image: url(img/punchR.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+.punchL {
+  animation: punchL 0.9s linear;
+}
+
+@keyframes punchL {
+  0% {
+    width: 240px;
+    height: 200px;
+    background-image: url(img/punchL.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  100% {
+    width: 240px;
+    height: 200px;
+    background-image: url(img/punchL.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+
+#spike-cut {
+  background-image: url(./img/spike-cut.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 510px;
+  background-size: 100px 100px;
+  transform: translate(-50%, -50%);
+  animation: rotate 1.4s linear infinite, block 2.5s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes block {
+  0% {
+    right: 1500px;
+  }
+
+  100% {
+    right: -20px;
+  }
+}
+
+#skullFrame,
+#charFrame {
+  background-image: url(./img/skullFrame.png);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 1150px;
+  background-size: 80px 80px;
+}
+
+#charFrame {
+  background-image: url(./img/charFrame.png);
+  left: 40px;
+}
+
+#skullHealth,
+#charHealth {
+  position: absolute;
+  top: 38px;
+  left: 1240px;
+  height: 25px;
+  width: 250px;
+  appearance: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#skullHealth::-webkit-progress-bar,
+#charHealth::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+#skullHealth::-webkit-progress-value,
+#charHealth::-webkit-progress-value {
+  background-color: rgb(46, 141, 15);
+  border-radius: 8px;
+  transition: width 1s ease;
+}
+
+#charHealth {
+  top: 32px;
+  left: 130px;
+}
+
+.hidden {
+  display: none;
+}
+
+#charStamina {
+  position: absolute;
+  top: 56px;
+  left: 130px;
+  height: 15px;
+  width: 250px;
+  appearance: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#charStamina::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+#charStamina::-webkit-progress-value {
+  background: linear-gradient(to right, red, orange, yellow);
+  border-radius: 8px;
+  transition: width 1s ease;
+}
+
+#Score {
+  margin: 0px;
+  position: absolute;
+  top: 25px;
+  left: 670px;
+  font-weight: bold;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+#ScoreValue {
+  margin: 0px;
+  position: absolute;
+  top: 27px;
+  left: 800px;
+  font-weight: bold;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+}
+
+.attackL {
+  animation: attackL 0.8s linear;
+}
+
+@keyframes attackL {
+  0% {
+    width: 220px;
+    height: 220px;
+    background-image: url(img/boss_attackL.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  100% {
+    width: 220px;
+    height: 220px;
+    background-image: url(img/boss_attackL.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+.attackR {
+  animation: attackR 0.8s linear;
+}
+
+@keyframes attackR {
+  0% {
+    width: 220px;
+    height: 220px;
+    background-image: url(img/boss_attackR.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  100% {
+    width: 220px;
+    height: 220px;
+    background-image: url(img/boss_attackR.gif);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+#popup {
+  font-family: 'Pixelify Sans', sans-serif;
+  position: fixed;
+  background: none;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  font-size : 24px;
+  text-align : center;
+  margin-top : 50px;
+  color : red;
+  animation: popUpAnimation 4s ease-out;
+}
+
+@keyframes popUpAnimation {
+  0% { transform: translate(-50%, -50%) scale(0); }
+  100% { transform: translate(-50%, -50%) scale(6); }
+}
+
+#fadeOut {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+}
+
+#fadeOut.fade-in {
+  visibility: visible;
+  opacity: 1;
+}

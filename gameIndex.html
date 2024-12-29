@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="gameStyles.css" />
+</head>
+
+<body>
+  <div class="game"></div>
+  <div id="sasuke"></div>
+  <div id="charFrame"></div>
+  <div id="skullFrame" class="hidden"></div>
+  <progress value="100" max="100" id="charHealth"></progress>
+  <progress value="100" max="100" id="charStamina"></progress>
+  <progress value="100" max="100" id="skullHealth" class="hidden"></progress>
+  <h1 id="Score">Score:</h1>
+  <h1 id="ScoreValue">0</h1>
+  <div id="fadeOut" class="fade"></div>
+  <audio id="jumpSound" src="img/jump.mp3" preload="auto"></audio>
+  <audio id="bg" src="img/bg.mp3" preload="auto"></audio>
+  <audio id="punch" src="img/punch.wav" preload="auto"></audio>
+  <audio id="hit" src="img/hit.mp3" preload="auto"></audio>
+  <audio id="crack" src="img/crack.mp3" preload="auto"></audio>
+  <script src="gameScripts.js"></script>
+</body>
+
+</html>
